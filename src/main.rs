@@ -1,6 +1,8 @@
 use tokio::net::TcpListener;
 use tracing_subscriber;
 
+mod api;
+mod domain;
 mod router;
 mod state;
 mod middleware;
