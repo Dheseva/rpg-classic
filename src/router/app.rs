@@ -1,7 +1,6 @@
 use axum::{routing::{get,post}, Router};
 use tower_http::trace::TraceLayer;
 
-use crate::state;
 use crate::state::app_state::AppState;
 use crate::router::{health::health_check, character::create_character};
 // use crate::middleware::logging::logging_layer;

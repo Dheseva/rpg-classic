@@ -1,9 +1,11 @@
 use uuid::Uuid;
+use serde::{Serialize, Deserialize};
 
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Character {
     pub id: Uuid,
     pub name: String,
-    pub level: i32,
+    pub level: u32,
     pub hp: i32,
 }
 
