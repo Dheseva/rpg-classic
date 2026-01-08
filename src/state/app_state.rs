@@ -1,9 +1,9 @@
-use std::sync::{Arc, Mutex};
 use crate::domain::character::Character;
+use std::sync::{Arc, Mutex};
 
 #[derive(Clone)]
 pub struct AppState {
-    pub character: Arc<Mutex<Character>>,
+    pub character: Arc<Mutex<PostgresSQL>>,
 }
 
 impl AppState {

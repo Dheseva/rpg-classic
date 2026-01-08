@@ -1,3 +1,4 @@
 /target
 /src/logging
 .env
+.idea
